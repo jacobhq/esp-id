@@ -25,8 +25,7 @@ print('Connection successful')
 print(ap.ifconfig())
 
 def web_page():
-  html = """<html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
-  <body><h1>Hello, World!</h1></body></html>"""
+  html = """<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Jacob's badge</title><style>*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif}body{color:rgba(255,255,255,.75)}main{background-color:#0b3954;height:100vh;padding:10%}h1{color:#20fc8f;font-size:4.5rem}code{color:#20fc8f;padding:8px;background-color:rgba(255,255,255,.25);width:80%;position:absolute;text-align:center;font-family:monospace;font-size:2rem}</style></head><body> <main><h1>Welcome</h1> <br><p>Nice! Your badge is set up and good to go.</p> <br> <b>Network name:</b> <br> <code>JB-JACOB</code> </main></body></html>"""
   return html
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
